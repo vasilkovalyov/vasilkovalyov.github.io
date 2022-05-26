@@ -12,7 +12,7 @@ export default function Navigation({ navigation, className }: { navigation: INav
           <>
             {pages.map((page) => (
               <li key={page.id} className="navigation__item">
-                <Link href={page.slug === 'home' ? '/' : `/${page.slug}`}>
+                <Link href={page.slug === 'home' ? '/en/' : `/en/${page.slug}`}>
                   <a className="navigation__link">{page.title}</a>
                 </Link>
               </li>
